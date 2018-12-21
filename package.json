@@ -31,7 +31,10 @@
     "koa-compose": "4.1.x"
   },
   "scripts": {
-    "test": "node test/test.js"
+    "test": "node tests/test.js"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "servue": "^0.5.0"
+  }
 }
