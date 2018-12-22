@@ -4,10 +4,15 @@ var app = new Slashed(__dirname)
 app.servue.nodemodules = app.get('path:../node_modules')
 
 var router = Slashed.Router()
+var router2 = Slashed.Router()
 
-router.get('/', async(ctx) => {
+router2.get('/', async(ctx) => {
+    ctx.body = 'hello'
+    return
     await ctx.render('home')
 })
+
+router.use(router2)
 
 app.use(router)
 
