@@ -7,8 +7,8 @@ Fast, opinionated, minimalist web framework for nodeJS
 ```
 'use strict'
 
-var slashed = require('slashed')
-var router = slashed.Router()
+var Slashed = require('slashed')
+var router = Slashed.Router()
 
 var app = slashed(__dirname)
 
