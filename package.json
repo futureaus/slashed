@@ -1,6 +1,6 @@
 {
   "name": "slashed",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Fast, opinionated, minimalist web framework for NodeJS",
   "main": "index.js",
   "dependencies": {
