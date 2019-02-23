@@ -7,8 +7,7 @@ var router = Slashed.Router()
 var router2 = Slashed.Router()
 
 router2.get('/', async(ctx) => {
-    ctx.body = 'hello'
-    return
+    ctx.body = 'hello'\
     await ctx.render('home')
 })
 
