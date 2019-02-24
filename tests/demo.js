@@ -1,14 +1,12 @@
 const Slashed = require('../index')
 
 var app = new Slashed(__dirname)
-app.servue.nodemodules = app.get('path:../node_modules')
 
 var router = Slashed.Router()
 var router2 = Slashed.Router()
 
 router2.get('/', async(ctx) => {
-    ctx.body = 'hello'\
-    await ctx.render('home')
+    ctx.body = 'hello'
 })
 
 router.use(router2)
